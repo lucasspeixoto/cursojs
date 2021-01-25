@@ -14,6 +14,9 @@ console.log(escola.replace(/\w/g, 'e')) // Substitui todos os dígitos (/\w/g) p
 console.log('Ana,Maria,Pedro'.split(',')) // Splita por ',' a string e preenche dentro de um array
 
 
+
+
+
 // charAt() - Loop Através de uma String
 for (let index = 0; index < escola.length; index++) {
     console.log(escola.charAt(index))
@@ -26,7 +29,6 @@ for (index = 0; index < a.length; index++) {
 }
 
 // Popular um array
-var a = ["a", "b", "c"]
 array = []
 for (index = 0; index < 20; index++) {
     array[index] = index*2
