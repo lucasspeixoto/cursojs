@@ -9,9 +9,8 @@ múltiplas linhas
 
 console.log("Linha 2")
 
-/*
- * Comentário de múltiplas linhas
- * Comentário de múltiplas linhas
- * Comentário de múltiplas linhas
- * Comentário de múltiplas linhas
+/* Dicas
+ * Evite comentários desnecessários
+ * Prefira código claro e limpo
+ * Comente tudo que for necessário
  */
