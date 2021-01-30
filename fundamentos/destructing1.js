@@ -3,7 +3,7 @@
     * Retirar elementos de um array
     * Forma simplificada para obter elementos de uma estrutura
 
-     */
+*/
 
 const pessoa = {
     nome: 'Liana',
