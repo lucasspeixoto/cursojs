@@ -1,0 +1,54 @@
+50 Dicas Essenciais Que Todo Programador Deveria Saber
+
+1ª:  Voçe nunca está pronto.
+2ª:  Faça uma coisa de cada vez.
+3ª:  Apenas começa, voce entenderá tudo automaticamente.
+        - Toda vez que estudamos um conteúdo, criamos em nossa cabeça
+        hipóteses, algumas erradas outras certar, precisamos da prática
+        para confrontar essas hipóteses para filtrar apenas as corretas.
+4ª:  Construa, construa, construa novamente.
+5ª:  Dormir é importante.
+6ª:  Pedir ajuda não é sinal de fraquezaª:  
+7ª:  Assistir todos os tutoriais não vai fazer de você um desenvolvedor.
+8ª:  Escrever seu próprio código fará de você um desenvolvedor.
+9ª:  Você só precisa dos fundamentos.
+10ª: Sempre planeja seu trabalho.
+11ª: Tenha outros hobbies.
+12ª: Espera mais de você do que outros esperariam.
+13ª: Escreve testes.
+14ª: Leia blogs, ouça podcasts, se inscreve em newsletters.
+15ª: Aprenda a ler a documentação.
+16ª: Cometa muitos erros.
+17ª: Para de procurar pela perfeição, se funciona, funciona.
+18ª: Se funcione, cutuque.
+19ª: Dê um tempo e descanse.
+20ª: Conecte-se com mais pessoas.
+21ª: Faça pair programming.
+22ª: Ensine aos outros o que você sabe.
+23ª: Procure por um mentor, se você pode orientar alguém, oriente.
+24ª: Lei mais livros, de ficção e não ficção.
+25ª: Finja que é um bom programador se você pensa que é ruim.
+26ª: Não desiste.
+27ª: SÊ as ferranentas que você usa parecem mágica, olhe debaixo do capô
+28ª: Se você não entende, copiar não é a melhor estratégia.
+29ª: Assista palestras no Youtube.
+31ª: Attend meetups and conferences too if you can.
+32ª: Always be a team player unless you work as an independent person.
+33ª: Readability is way more important than shortness.
+34ª: Learn more what you like than what you think you should.
+35ª: Find a balance between theory and practice.
+36ª: Invest in your development setup.
+37ª: Learnª: Keyboardª: Shortcuts.
+38ª: Be consistent.
+39ª: Try a new language.
+40ª: Define your payment terms explicitly.
+41ª: Enjoy your little winnings.
+42ª: Don't be scared to show off your work.
+43ª: Learn to comment your code.
+44ª: Listen to advice but make your own decisions.
+45ª: Support other developersª: Sponsorships and the likes.
+46ª: Learn from everything and everyone and never miss the opportunity to learn.
+47ª: You should not be afraid to have simple solutions to simple problems.
+48ª: Take care of your mental and physical health.
+49ª: Try explaining concepts in writing and publishing.
+50ª: At the end of it all, there is family.
