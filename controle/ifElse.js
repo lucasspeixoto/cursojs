@@ -28,4 +28,4 @@ var teste = "a";
 console.log(!isNaN(valor)); /* retorna false negando fica true, 1.5 é tipo numérico */
 console.log(!isNaN(teste)); /* retorna true negando fica falso, "a" não é um número */
 
-console.log(!isNaN('10'))
+console.log(!isNaN(10)) // ! (Not) + NaN (Not) = true
