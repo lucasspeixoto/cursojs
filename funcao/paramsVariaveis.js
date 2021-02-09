@@ -9,5 +9,5 @@ function soma(){
 }
 
 console.log(soma()) //Sem parâmetros não retorna nada
-console.log(soma(1)) //1 parÂmetro passado, retorna ele
+console.log(soma(1)) //1 parâmetro passado, retorna ele
 console.log(soma(1.1, 2.2, 3.3)) //recuperamos 1.1, 2.2 e 3.3 como argumentos através do arguments
