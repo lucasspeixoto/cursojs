@@ -1,0 +1,41 @@
+/*
+ Antes das linguagens estruturadas, tinhamos o Go To
+
+ Procedural
+    Dentro das linguagens estruturadas, temos os paradigma procedural
+    que é baseado no procedimento, na função , que realiza um procedi-
+    mento com um conjunto de dados
+    processamento(valor1, valor2, valor3)
+
+   Orientação à Objetos
+    Antes tinhamos na procedural funções manipulando dados, agora temos
+    dados (objetos) e dentro dos dados temos funções.
+    objeto = {
+        valor1,
+        valor2,
+        valor3,
+        processamento(){
+            }
+    }
+    objeto.processamento() 
+    O Objeto funciona como uma capa, que agrupa processamentos e atributos.
+    A OO trouxe uma forma de programar baseado em comportamentos mais humanos,
+    objetos diferentes tendo seus dados, seus comportamentos e se relacionando
+    com outros objetos.
+    Trazer a realizade do mundo para o software.
+
+    Principios importantes em OO:
+        * Abstração: Pegar um objeto do mundo real e traduzir para dentro do sistema
+        * Encapsulamento: Ter os detalhes de implementação escondido e mostrar para
+            quem precisa saber apenas. Precisamos conhecer a interface de comunicação,
+            mas não os detalhes de implementação interna. Um objeto deixar exposto todos
+            os detalhes de sua implementação pode ser algo ruim, pois gerar dependência
+            desses.
+        * Herança: Importante para reuso de código, que um objeto recebe atributos, 
+            características de outros objetos. Em JS não temos herança multipla (Um filho ter 2 pais)apenas.
+            Se possível optar pela composição (tem um) no lugar da herança apenas.
+        * Polimorfismo: Múltiplas formas, temos uma variável do tipo pai, mais genérico (carro), onde
+            para determinado objeto, podemos atribuir tipos (honda, ferrari, bmw, etc...)
+
+
+    */
