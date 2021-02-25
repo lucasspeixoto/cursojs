@@ -28,7 +28,7 @@ console.log(notas1) //Não obtem todas as notas em um único array
 
 
 //Usando flatMap
-Array.prototype.flatMap = function(callback) {
+Array.prototype.flatMap = function (callback) {
     return Array.prototype.concat.apply([], this.map(callback))
 }
 const notas2 = escola.flatMap(getNotasDaTurma)
