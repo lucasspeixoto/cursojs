@@ -16,4 +16,4 @@ const conceito = function(notas){
     }
 }
 
-conceito([1.1, 5.2, 7.1, 9, 11])
+conceito([1.1, 5.2, 7.1, 9])

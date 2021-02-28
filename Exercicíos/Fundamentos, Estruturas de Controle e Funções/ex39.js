@@ -11,6 +11,12 @@ function troca(vetor1, vetor2) {
             vetor1[i] = vetor2[i]
             vetor2[i] = aux
             */
+
+            /* De outra forma
+            vetor1[i] = vetor1[i] + vetor2[i]
+            vetor2[i] = vetor1[i] - vetor2[i]
+            vetor1[i] = vetor1[i] - vetor2[i]
+            */
         }
         
     }
