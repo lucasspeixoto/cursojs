@@ -1,5 +1,5 @@
-/* Função que serve para transformar um array em um array, em um element
-número, etx... Temos um parâmetro que vai sendo acumulado de chamada
+/* Função que serve para transformar um array em um array, em um elemento
+número, etc... Temos um parâmetro que vai sendo acumulado de chamada
 em chamada, ou seja, o resultado de uma função reduce é sempre passado
 para a próxima iteração. O primeiro reduce recebe os dois primeiros
 elementos (0 e 1), transforma e o resultado é passado para a próxima

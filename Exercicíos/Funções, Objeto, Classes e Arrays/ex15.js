@@ -14,7 +14,6 @@ console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]))
 console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]))
 
 //Solução 2 - filter
-
 function receberSomenteOsParesDeIndicesPares(numeros) {
     return numeros.filter((numero, indice) => {
         const numeroPar = numero % 2 === 0
