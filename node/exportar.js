@@ -22,9 +22,8 @@ console.log(module.exports)
 
 /* Mudamos a referência de exports duas vezes (linha 11 e 15), 
 mas ele continua apontando para o mesmo objeto. Para ele apontar
-para outro objetos, precisamos usar o module.exports
+para outro objetos, precisamos usar o module.exports.
 
-
-
+O this e o exports são 2 referentes para o objeto que module.exports aponta
 */
 
