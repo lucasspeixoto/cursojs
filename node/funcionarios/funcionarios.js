@@ -11,12 +11,12 @@ axios.get(url).then(response => {
     const chinesaMaiorSalario = funcionarios.filter(funcs => funcs.pais === 'China')
         .filter(funcs => funcs.genero === 'F')
         .reduce((accum, atual) => {
-            return accum.salario > atual.salario ? accum : atual
+            return accum.salario < atual.salario ? accum : atual
         })
     console.log(chinesaMaiorSalario)
 })
 
-//Solução 2
+/*Solução 2
 const url = 'http://files.cod3r.com.br/curso-js/funcionarios.json'
 const chinesas = f => f.pais === 'China'
 const mulheres = f => f.genero === 'F'
@@ -31,5 +31,5 @@ axios.get(url).then(response => {
     console.log(chinesaMaiorSalario)
 })
 
-
+*/
 
