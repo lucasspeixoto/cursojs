@@ -1,7 +1,7 @@
 const oracledb = require('oracledb')
 const dbConfig = require('./arquivo.json')
 
-console.log(dbConfig.db.query)
+//console.log(dbConfig.db.query)
 
 async function run() {
     let connection;
