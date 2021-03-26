@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #04</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <p>Início</p>
+    </div>
+    <div>
+        <ul>
+            <li>Liana</li>
+            <li>Cecília</li>
+            <li>Lucas</li>
+            <li>César</li>
+        </ul>
+    </div>
+    <div>
+        <p>Fim</p>
+    </div>
+    <script>
+        /* 
+        function log() {
+            console.log(this)
+        }
+        //Adicionando a função log a HTMLCollection, HTMLElement (Dentro de HTMLCollection), NodeList e Node (Dentro de NodeList)
+        HTMLCollection.prototype.log = log()
+        HTMLElement.propotype.log = log()
+        NodeList.prototype.log = log()
+        Node.prototype.log = log() */
+
+        const lista = document.querySelector('div ul')
+        console.log(lista.parentNode) //parentNode vai acessar o elemento pai, no caso a div que envolve a lista ul
+        console.log(lista.childNodes) //Tras os textos junto das ul
+
+        const primeiro = lista.firstChild
+        console.log(primeiro)
+        console.log(primeiro.nextSibling)
+
+        const ultimo = lista.lastChild
+        console.log(ultimo)
+        console.log(ultimo.previousSibling)
+
+        console.log(lista.children)
+        console.log(lista.firstElementChild) //Traz de fato o elemento, diferente do lista.firstChild, que traz os textos
+        console.log(lista.lastElementChild)
+        console.log(lista.parentNode.previousElementSibling) //lista.parentNode é a div que envolve a lista, previousElementSibling é o elemento irmão anterior
+        console.log(lista.parentNode.nextElementSibling)
+
+        console.log(document.querySelectorAll('div ul li'))
+    </script>
+</body>
+
+</html>

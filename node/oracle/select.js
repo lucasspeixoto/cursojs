@@ -1,14 +1,11 @@
 const oracledb = require('oracledb')
 const dbConfig = require('./arquivo.json')
 
-//console.log(dbConfig.db.query)
-
 async function run() {
     let connection;
     try {
         connection = await oracledb.getConnection(dbConfig.db)
         const result = await connection.execute(
-            // The statement to execute
             dbConfig.db.query,{}, {outFormat : oracledb.OBJECT}
         );
         console.log(result.rows)
@@ -26,4 +23,3 @@ async function run() {
 }
 run()
 
-console.log('Teste')

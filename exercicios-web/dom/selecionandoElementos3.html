@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #03</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Formulário</h1>
+    <form name="pesquisa" action="http://www.google.com.br/search">
+        <input type="text" name="q" placeholder="Digite o termo...">
+        <select name="hl">
+            <option value="pt-br">Português (Brasil)</option>
+            <option value="en-us">Inglês (Americano)</option>
+        </select>
+        <button>Pesquisar</button>
+    </form>
+    <script>
+        console.log(document.forms) //Retorma um HTMLCollection
+        console.log(document.forms[0])
+        console.log(document.getElementsByName('pesquisa')) //Retorna um NodeList
+        console.log(document.getElementsByTagName('form')) //Retorna um HTMLCollection
+        console.log(document.pesquisa) //Pega o elemento com o name = "pesquisa", essa é a forma mais interessante
+        console.log(document.pesquisa.q) //Retorna a tag input
+        document.pesquisa.q.value = 'Linux' //Altera o valor do campo
+        document.pesquisa.hl.value = 'en-us' //Altera o valor do campo hl(host value)
+
+        console.log(document.pesquisa.hl.selectedIndex) //Retorna 1, pois o hl selecionado é o 2º (en-us), que é elemento de indice 1
+
+    </script>
+</body>
+
+</html>
