@@ -16,7 +16,18 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('#compras')
+
+        //somente leitura, não altera o elemento na DOM
+        console.log(lista.attributes)
+        console.log(lista.attributes[0])
+        console.log(lista.attributes.destino)
+        console.log(lista.attributes['data-urgencia'])
+
+        lista.attributes.destino = 'Casa' //Não altera, o metodo attributes é somente de leitura
+        console.log(lista.attributes.destino) 
+
+
     </script>
 </body>
 

@@ -10,14 +10,45 @@
 <body class='conteudo exercicio'>
     <div>
         <label for="compras">Compras</label>
-        <ul id="compras" destino='escritório' data-urgencia="5">
+        <ul id="compras" destino='escritório' data-urgencia="5" data-perigo="4">
             <li>Café</li>
             <li>Água</li>
             <li>Copo Descartável</li>
         </ul>
     </div>
     <script>
-        // ...
+        
+        const lista = document.querySelector('div ul[destino="escritório"]') //document.querySelector('#compras')
+        console.log(lista)
+        console.log('Elemento "ul".......')
+        console.log('childNodes', lista.childNodes)
+
+        console.log('destino', lista.destino) //Retorna undefined pois destino é um atributo personalizado, diferente de id
+        console.log('destino', lista.getAttribute('destino'))
+        console.log('hasAttribute', lista.hasAttribute('destino'))
+        lista.setAttribute('destino', 'empresa')
+        console.log('destino', lista.getAttribute('destino'))
+
+        lista.setAttribute('status', 'ativo')
+        lista.removeAttribute('destino')
+
+        /* Por padrão, é convencionada definir atributos
+        personalizados com o prefixo 'data-', e podemos acessar
+        todos esses atributos com o metodo dataset */
+
+        console.log(lista.dataset) //Retorna um DOMStringMap
+        console.log(lista.dataset.urgencia)
+        lista.dataset.urgencia = "3"
+        console.log(lista.getAttribute('data-urgencia'))
+
+        //Cuidado
+
+        //FOrmas de acessar o atributo for da label
+        const label = document.querySelector('label')
+        console.log(label.for) //Não acessa pois for é palavra reservada
+        console.log(label.htmlFor)
+        console.log(label.getAttribute('for'))
+
     </script>
 </body>
 

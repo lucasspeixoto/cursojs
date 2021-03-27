@@ -31,6 +31,40 @@
         <button wm-submit>Pesquisar</button>
     </form>
     <script>
-        // ...
+        //Vamos interceptar a submissão de um formulário
+        const submit = document.querySelector('[wm-submit]')
+        submit.onclick = function (e) {
+            e.preventDefault()
+
+            const form = e.target.parentNode  //e.target é o elemento que disparou o evento, no caso
+            //o botão, e seu parentNode, é que o circunda, no caso o formulário
+            const formData = new FormData (form) 
+            formData.append('ajax', true)
+            console.log(formData.get('q'))
+            console.log(formData.has('hl'))
+
+            for (let dado of formData) {
+                console.log(dado)
+            }
+        }
+        
+        //Fazendo a mesma coisa para o evento submit
+        const form = document.forms[0]
+        form.onsubmit = function (e) {
+            e.preventDefault()
+
+            const form = e.target
+            const formData = new FormData (form) 
+            formData.append('ajax', true)
+            console.log(formData.get('q'))
+            console.log(formData.has('hl'))
+
+            for (let dado of formData) {
+                console.log(dado)
+            }
+        }
+
+
+
     </script>
 </body>

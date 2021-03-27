@@ -12,7 +12,17 @@
         <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
+        const div = document.querySelector('div')
+
+        div.innerHTML = 'Texto Alterado' //innerHTML = Elemento que está dentro da div, ou seja, exclui o parágrafo e inclui a div
+        //div.outerHTML = 'Texto Alterado' //Alem de substituir todo o conteudo da div, substitui a div tbm, ou seja, ela passa a deixar de existir
+        div.insertAdjacentHTML('beforebegin', '<p>Antes Início</p>') //INsere antes de iniciar a nossa div
+        div.insertAdjacentHTML('afterbegin', '<p>Depois Início</p>')
+        div.insertAdjacentHTML('beforeend', '<p>Antes Fim</p>')
+        div.insertAdjacentHTML('afterend', '<p>Depois Fim</p>')
+
+        //Somento texto (sem tags)
+        console.log(div.innerText)
     </script>
 </body>
 

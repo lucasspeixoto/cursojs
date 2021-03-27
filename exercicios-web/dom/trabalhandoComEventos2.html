@@ -10,6 +10,18 @@
 <body class="conteudo exercicio">
     <div>Elemento</div>
     <script>
-        // ...
+        const item = document.querySelector('div')
+
+        item.style.position = 'absolute'
+
+        item.onmousemove = e => {
+            const div = e.target
+            item.style.cursor = 'move'
+            if (e.buttons) { //e.buttons != 0 ?
+                div.style.top = `${e.clientY - (div.clientHeight /2)}px` //e.clientY = posição do mouse em y ai dividir a altura por 2, vamos manter o cursor sempre no meio da div
+                div.style.left = `${e.clientX - (div.clientWidth /2)}px`
+            }
+        }
+
     </script>
 </body>

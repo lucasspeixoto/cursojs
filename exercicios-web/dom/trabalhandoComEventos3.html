@@ -45,7 +45,29 @@
     </div>
     <div class="direita" wm-dropzone></div>
     <script>
-        // ...
+        const items = document.querySelectorAll('[wm-dropzone] .item')
+        items.forEach((item, index) => {
+            item.draggable = true 
+            item.id = item.id || `draggable-item-${index}`
+            item.ondragstart = e => { //ondragstart é o evento disparado quando começar a arrastar
+                e.dataTransfer.setData('item-id', e.target.id)
+            }
+        })
+
+        const dropzones = document.querySelectorAll('[wm-dropzone]')
+        dropzones.forEach(dropzone => {
+            dropzone.ondragover = e => e.preventDefault() //ondragover, quando terminar de arrastar determinado elemento. o e.preventDefault() tem que ser chamado para o próximo evento ser chamado
+            dropzone.ondrop = function (e) {
+                const id = e.dataTransfer.getData('item-id')
+                const item = document.getElementById(id)
+                /* e.target.appendChild(item) e.target é o local que soltamos o elemento, que deve recever o item
+                 fazer o append dentro do e.target, vai permitir colcoar um elemento dentro do outro
+                para evitar isso basta adicionar na dropzone 'dropzone.appendChild(item)*/
+                dropzone.appendChild(item)
+            }
+        })
+
+
     </script>
 </body>
 

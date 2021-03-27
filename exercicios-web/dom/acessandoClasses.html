@@ -12,7 +12,29 @@
         Classes
     </div>
     <script>
-        // ...
+        const div = document.querySelector('div')
+        const classes = div.classList
+        /* O classList, é uma lista de classes, e a partir dele,
+        conseguimos adicionar, remover, usar o toggle, que se tiver remove o
+        elemento, se não tiver adiciona, ou seja, fica alternando a existencia
+        de uma classe em um elemento
+        */
+
+        classes.add('destaque')
+        classes.remove('destaque')
+        classes.toggle('destaque')
+        console.log(classes.contains('destaque'))
+        console.log(classes.length)
+        classes.toggle('destaque')
+        console.log(classes.length)
+
+        classes.add('destaque1')
+        classes.add('destaque2')
+
+        for (let c of classes) {
+            console.log(c)
+        }
+
     </script>
 </body>
 

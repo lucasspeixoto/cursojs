@@ -9,9 +9,42 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+        <a taa href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+        /*QUal o padrão de projeto mais utilizado na web ?
+        O padrão mais utilizado é o observer, que é um padrão
+        onde determinadas ações ficam aguardando, observando até
+        um determinado evento ocorrer
+        */
+
+        const navegarEm5s = e => {
+            e.preventDefault() //Orevine o comportamento padrão da div
+            console.log('Saindo em 5s....')
+            setTimeout(() => {
+                window.location.href = e.target.href /*
+                window.location.href é a janela onde o endereço vai ficar
+                target é o elemento html que disparou o evento*/
+            }, 5000)
+        }
+
+        //Possibilidades para chamar esse evento de aguardar 5s
+
+        //1ª <a href="https://google.com.br" onclick="navegarEm5s(event)">Google</a>
+
+        //2ª Possibilidade
+        const link = document.querySelector('[taa]')
+        link.onclick = event => {
+            navegarEm5s(event)
+        }
+        /*A vantagem do onclick na tag é a clareza na hora de ler o código
+        A vantagem do código fora da tag, é a facilidade de modificação desse evento
+        Se tentarmos usar o evento com algum atributo personalizado, vamoss
+        conseguir visualizar e deixar claro na tag que temos um evento, pois
+        os ter atributos personalizados, significa que ele vai ser usado por um
+        JavaScript.
+        */
+
     </script>
 </body>
+
