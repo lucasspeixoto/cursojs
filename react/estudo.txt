@@ -1,0 +1,7 @@
+Para iniciar um projeto react, precisamos ir à pasta e digitar 'npm i -g create-react-app'
+e criar o app, ja com a build configurada. Por baixo, o react um build do webpack.
+
+Para criar, basta entrar com 'create-react-app exercicios'
+onde exercicios é o nome do projeto
+
+

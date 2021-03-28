@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Introdução React</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        const body = document.querySelector('body')
+        function CapsLock(props) {
+            const textoInserido = props.children
+            const textoEmCapsLock = textoInserido.toUpperCase()
+            return <div>{textoEmCapsLock}</div>
+        }
+
+        function Pagina() {
+            tag = '<CapsLock>Teste</CapsLock>'
+            body.appendChild(tag)
+        }
+
+        Pagina()
+
+    </script>
+</body>
+
+</html>
