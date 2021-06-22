@@ -1,0 +1,17 @@
+
+
+.red {
+  color: #C00;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+#span1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4f0;
+  margin-bottom: 50px;
+}

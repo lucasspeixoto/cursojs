@@ -1,0 +1,11 @@
+Aulas
+
+1. Anatomia da Tag
+    - Tag não são case sensitive
+
+2. Anatomia de uma Página HTML
+
+3. Um pouco de CSS
+  - <!-- #ff0000 = #f00 -->
+  - '.' para referenciar classes
+  - '#' Para referenciar elementos pelo id

@@ -19,3 +19,15 @@ const paradinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace('.', ',')}`
 resultado = nums.map(soma10).map(triplo).map(paradinheiro)
 
 console.log(resultado)
+
+let n1 = [1, 2, 3]
+let l1 = ['a', 'c', 'e']
+let l2 = ['b', 'd', 'f']
+for (let i of n1.map(e => e.toString())){
+    console.log([...i])
+}
+console.log([...l1])
+resultado = l1.map((e, i) => `${e}${l2[i]}`).join("")
+console.log(resultado)
+
+
